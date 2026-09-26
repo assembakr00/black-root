@@ -12,6 +12,21 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	can_interact_with_root = !root_status and can_interact_with_root
+	
+
+var investigate_text = {
+	"0text": "I should probably look into this some more", 
+	"0time": 4, 
+	"1text": "Don't want it to get any worse", 
+	"1time": 3
+}
+
+var leave_text = {
+	"0text": "Not my problem", 
+	"0time": 2, 
+	"1text": "Someone else can deal with that", 
+	"1time": 3
+}
 
 var level_1_text = {
 	"0text": "Bla", 

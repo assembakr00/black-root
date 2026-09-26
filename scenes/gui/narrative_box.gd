@@ -10,11 +10,17 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	# Update the text
+	if str(globals.root_status) == "investigate":
+		curr_text = globals.investigate_text
+	elif str(globals.root_status) == "leave":
+		curr_text = globals.leave_text
+	
+	# Show the text
 	if curr_text:
 		if $NarratorTimer.time_left == 0:
 			change_time(curr_text)
 			show_text(curr_text)
-			curr_step += 1
 
 # Update the text
 func show_text(text_dict):
@@ -29,3 +35,7 @@ func change_time(text_dict):
 		$NarratorTimer.start(text_dict[str(curr_step) + "time"])
 	else:
 		return "No time set"
+
+
+func _on_narrator_timer_timeout() -> void:
+	curr_step += 1
