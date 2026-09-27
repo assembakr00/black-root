@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bj8au5n24ldig"]
+
+[ext_resource type="Texture2D" uid="uid://bgh55yvxayvsp" path="res://assets/Tiles/World Atlas/Assets/Atlas.png" id="1_rhiet"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rglt0"]
+size = Vector2(16, 8)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=1674688858]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1781310856]
+texture = ExtResource("1_rhiet")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 25)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=512650015]
+shape = SubResource("RectangleShape2D_rglt0")
