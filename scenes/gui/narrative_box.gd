@@ -12,9 +12,17 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	# Update the text
 	if str(globals.root_status) == "investigate":
+		if curr_text != globals.investigate_text:
+			restart()
 		curr_text = globals.investigate_text
 	elif str(globals.root_status) == "leave":
+		if curr_text != globals.leave_text:
+			restart()
 		curr_text = globals.leave_text
+	
+	#print("narrator timer at: ", $NarratorTimer.time_left)
+	#print("curr_step is: ", curr_step)
+	#print("curr_text is: ", curr_text)
 	
 	# Show the text
 	if curr_text:
@@ -29,10 +37,15 @@ func show_text(text_dict):
 	else:
 		return "No text found"
 
+# Restarts the text and tiemr
+func restart():
+	curr_step = -1
+	change_time(curr_text, 1)
+
 # Start the timer
-func change_time(text_dict):
+func change_time(text_dict, time = null):
 	if str(curr_step) + "time" in text_dict:
-		$NarratorTimer.start(text_dict[str(curr_step) + "time"])
+		$NarratorTimer.start(text_dict[str(curr_step) + "time"] if !time else time)
 	else:
 		return "No time set"
 

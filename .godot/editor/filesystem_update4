@@ -1,3 +1,4 @@
 res://scenes/areas_in_world/level_1.tscn
 res://scripts/globals.gd
 res://scenes/gui/narrative_box.gd
+res://scenes/gui/narrative_box.tscn
