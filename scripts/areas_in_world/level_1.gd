@@ -18,3 +18,8 @@ func _on_blackened_root_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
 		print("Player touched root")
 		touched_root = true
+
+
+func _on_narrator_activate_body_entered(body: Node2D) -> void:
+	if body.name == "Player":
+		$Player/NarrativeBox.curr_text = globals.init_text

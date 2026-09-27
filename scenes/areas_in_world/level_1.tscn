@@ -355,6 +355,9 @@ size = Vector2(184, 50)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_rglt0"]
 distance = -1164.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8olg"]
+size = Vector2(212, 211)
+
 [node name="Level1" type="Node2D" unique_id=2089379257]
 script = ExtResource("1_hkc2u")
 
@@ -418,4 +421,12 @@ position = Vector2(7, -4)
 [node name="kill zone colliosion" type="CollisionShape2D" parent="killzone" unique_id=1344783331]
 shape = SubResource("WorldBoundaryShape2D_rglt0")
 
+[node name="NarratorActivate" type="Area2D" parent="." unique_id=417043758]
+position = Vector2(2707, -369)
+
+[node name="ActivateCollision" type="CollisionShape2D" parent="NarratorActivate" unique_id=328659334]
+position = Vector2(0, -49.5)
+shape = SubResource("RectangleShape2D_c8olg")
+
 [connection signal="body_entered" from="BlackenedRoot" to="." method="_on_blackened_root_body_entered"]
+[connection signal="body_entered" from="NarratorActivate" to="." method="_on_narrator_activate_body_entered"]
