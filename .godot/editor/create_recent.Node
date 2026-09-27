@@ -1,3 +1,4 @@
+TileMap
 Area2D
 CollisionShape2D
 AnimatableBody2D
@@ -6,7 +7,6 @@ AnimatedSprite2D
 TileMapLayer
 AudioStreamPlayer2D
 AudioStreamPlayer
-TileMap
 RichTextLabel
 Button
 Control
