@@ -2,15 +2,16 @@
 
 [ext_resource type="Script" uid="uid://cmfe8mwbaphsv" path="res://scripts/areas_in_world/level_1.gd" id="1_hkc2u"]
 [ext_resource type="PackedScene" uid="uid://cbatlw163lxtd" path="res://scenes/player/player.tscn" id="1_weabw"]
-[ext_resource type="Texture2D" uid="uid://cxj2ow0xk0grg" path="res://assets/tiles/dirt_tilemap.png" id="2_81law"]
-[ext_resource type="Texture2D" uid="uid://cbvfywuuac0am" path="res://assets/tiles/root.png" id="3_ce23n"]
-[ext_resource type="Texture2D" uid="uid://42jj3t6fo3jx" path="res://assets/tiles/sprites/world_tileset.png" id="4_c8olg"]
-[ext_resource type="Texture2D" uid="uid://dpyfai7ox6j1x" path="res://assets/tiles/root+black.png" id="4_ce23n"]
-[ext_resource type="Texture2D" uid="uid://bcah7med42du3" path="res://assets/tiles/root+black_liquid_middle.png" id="4_kfbm6"]
-[ext_resource type="Texture2D" uid="uid://be5ygdk6286d2" path="res://assets/tiles/root_tile.png" id="5_dut07"]
-[ext_resource type="Texture2D" uid="uid://cb3vy1r1r3e88" path="res://assets/tiles/root+black_liquid.png" id="6_wscyj"]
+[ext_resource type="Texture2D" uid="uid://cxj2ow0xk0grg" path="res://assets/Tiles/dirt_tilemap.png" id="2_81law"]
+[ext_resource type="Texture2D" uid="uid://cbvfywuuac0am" path="res://assets/Tiles/root.png" id="3_ce23n"]
+[ext_resource type="Texture2D" uid="uid://42jj3t6fo3jx" path="res://assets/Tiles/sprites/world_tileset.png" id="4_c8olg"]
+[ext_resource type="Texture2D" uid="uid://bcah7med42du3" path="res://assets/Tiles/root+black_liquid_middle.png" id="4_ce23n"]
+[ext_resource type="Texture2D" uid="uid://bcah7med42du3" path="res://assets/Tiles/root+black_liquid_middle.png" id="4_kfbm6"]
+[ext_resource type="Texture2D" uid="uid://be5ygdk6286d2" path="res://assets/Tiles/root_tile.png" id="5_dut07"]
+[ext_resource type="Texture2D" uid="uid://bcah7med42du3" path="res://assets/Tiles/root+black_liquid_middle.png" id="6_wscyj"]
 [ext_resource type="PackedScene" path="res://scenes/objects/choice_trigger.tscn" id="7_choice"]
 [ext_resource type="PackedScene" uid="uid://cu5ihad0iyhvn" path="res://scenes/objects/killzone.tscn" id="12_3w3sh"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3w3sh"]
 texture = ExtResource("4_c8olg")
