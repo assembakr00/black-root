@@ -20,9 +20,6 @@ func _physics_process(delta: float) -> void:
 	_update_animation()
 	move_and_slide()
 
-func _process(delta: float) -> void:
-	$Choices.visible = globals.can_interact_with_root
-
 func _update_animation() -> void:
 	var animated_sprite: AnimatedSprite2D = $PlayerSprite
 	
@@ -46,6 +43,10 @@ func get_animation_type() -> String:
 
 
 func move(delta):
+	if GameState.input_locked:
+		velocity = Vector2.ZERO
+		return
+
 	target_vel = Vector2.ZERO
 	
 	if is_on_floor():
@@ -74,24 +75,3 @@ func turn_player(animated_sprite):
 	elif velocity.x > 0:
 		animated_sprite.flip_h = false
 
-
-func _on_interact_area_area_entered(area: Area2D) -> void:
-	if area.name == "BlackenedRoot" and globals.can_get_root:
-		globals.can_interact_with_root = true
-		#print("Player can interact")
-
-
-func _on_interact_area_area_exited(area: Area2D) -> void:
-	if area.name == "BlackenedRoot" and globals.can_get_root:
-		globals.can_interact_with_root = false
-		#print("Player can't interact")
-
-
-func _on_investigate_pressed() -> void:
-	globals.root_status = "investigate"
-	$Choices/ButtonAudioFancy.play()
-
-
-func _on_leave_pressed() -> void:
-	globals.root_status = "leave"
-	$Choices/ButtonAudioFancy.play()

@@ -73,6 +73,7 @@ text = "Back"
 
 [node name="ButtonAudio" type="AudioStreamPlayer" parent="." unique_id=1721033694]
 stream = ExtResource("3_86p3v")
+bus = &"sfx"
 
 [connection signal="pressed" from="PlayLevel1" to="." method="_on_play_level_1_pressed"]
 [connection signal="pressed" from="PlayLevel2" to="." method="_on_play_level_2_pressed"]

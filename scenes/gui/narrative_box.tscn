@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://qv33wtajxomn"]
 
 [ext_resource type="Script" uid="uid://ck0hx6o3oaksu" path="res://scenes/gui/narrative_box.gd" id="1_y7k31"]
+[ext_resource type="FontFile" uid="uid://djis7l2dtalmy" path="res://assets/fonts/ThaleahFat.ttf" id="2_sq131"]
 
 [node name="NarrativeBox" type="Control" unique_id=369282519]
 layout_mode = 3
@@ -17,6 +18,7 @@ offset_left = 123.0
 offset_top = 4.0
 offset_right = 1033.0
 offset_bottom = 161.0
+theme_override_fonts/normal_font = ExtResource("2_sq131")
 theme_override_font_sizes/normal_font_size = 32
 
 [node name="NarratorTimer" type="Timer" parent="." unique_id=149402662]

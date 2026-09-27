@@ -37,6 +37,7 @@ text = "Exit"
 
 [node name="ButtonAudio" type="AudioStreamPlayer" parent="." unique_id=1818901433]
 stream = ExtResource("2_vjjin")
+bus = &"sfx"
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://scripts/objects/choice_trigger.gd" id="1_choice"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_choice"]
+radius = 96.0
+
+[node name="ChoiceTrigger" type="Area2D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_choice")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_choice")
+
+[node name="ChoiceUI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="ChoiceUI"]
+offset_left = 288.0
+offset_top = 470.0
+offset_right = 992.0
+offset_bottom = 610.0
+
+[node name="Investigate" type="Button" parent="ChoiceUI/Panel"]
+offset_left = 24.0
+offset_top = 28.0
+offset_right = 336.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 24
+text = "Investigate"
+
+[node name="Leave" type="Button" parent="ChoiceUI/Panel"]
+offset_left = 368.0
+offset_top = 28.0
+offset_right = 680.0
+offset_bottom = 108.0
+theme_override_font_sizes/font_size = 24
+text = "Leave"

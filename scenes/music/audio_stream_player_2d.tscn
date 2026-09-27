@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cgmd38r6ru62p"]
+
+[ext_resource type="AudioStream" uid="uid://b6en3cikfwdjp" path="res://assets/audio/music/jamegamout.mp3" id="1_1udxr"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" unique_id=630824341]
+stream = ExtResource("1_1udxr")
+autoplay = true
+bus = &"music"

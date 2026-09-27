@@ -14,9 +14,15 @@ config/name="Black Root"
 run/main_scene="uid://ddtgjbsvdlkwe"
 config/features=PackedStringArray("4.7")
 
+[audio]
+
+buses/default_bus_layout="uid://2laqpk4npoj2"
+
 [autoload]
 
 globals="*uid://cww3ab6yxxjtb"
+GameState="*res://scripts/game_state.gd"
+AudioStreamPlayer2d="*uid://cgmd38r6ru62p"
 
 [display]
 
