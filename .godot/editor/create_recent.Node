@@ -1,14 +1,14 @@
+TileMapLayer
+TileMap
+RichTextLabel
 Button
 Control
 CollisionShape2D
 Area2D
 Sprite2D
-TileMapLayer
 Timer
 TextureRect
 Parallax2D
 HSeparator
-RichTextLabel
 Camera2D
 StaticBody2D
-AnimatedSprite2D

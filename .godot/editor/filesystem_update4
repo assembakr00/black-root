@@ -1,13 +1,2 @@
 res://scenes/areas_in_world/level_1.tscn
-res://scenes/player/player.tscn
-res://scripts/player/player.gd
-res://scripts/globals.gd
 res://scenes/gui/narrative_box.gd
-res://scripts/areas_in_world/level_1.gd
-res://assets/Tiles/dirt_tilemap.png
-res://assets/tiles/dirt_tilemap.png
-res://assets/Tiles/root+black.png
-res://assets/tiles/root+black.png
-res://assets/Tiles/root.png
-res://assets/tiles/root.png
-res://scenes/gui/narrative_box.tscn
