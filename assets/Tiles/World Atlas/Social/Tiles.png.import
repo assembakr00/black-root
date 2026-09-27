@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b647646a0x7m1"
-path="res://.godot/imported/Tiles.png-07680684f2b832c89710a2e050b71068.ctex"
+path="res://.godot/imported/Tiles.png-d5079a260ff27312bc6bbcce585e2108.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/World Atlas/Social/Tiles.png"
-dest_files=["res://.godot/imported/Tiles.png-07680684f2b832c89710a2e050b71068.ctex"]
+source_file="res://assets/Tiles/World Atlas/Social/Tiles.png"
+dest_files=["res://.godot/imported/Tiles.png-d5079a260ff27312bc6bbcce585e2108.ctex"]
 
 [params]
 
