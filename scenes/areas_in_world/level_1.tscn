@@ -405,7 +405,7 @@ position = Vector2(1, -2)
 
 [node name="killzone" parent="." unique_id=2088758882 instance=ExtResource("12_3w3sh")]
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="killzone" unique_id=1344783331]
+[node name="kill zone colliosion" type="CollisionShape2D" parent="killzone" unique_id=1344783331]
 shape = SubResource("WorldBoundaryShape2D_rglt0")
 
 [connection signal="body_entered" from="BlackenedRoot" to="." method="_on_blackened_root_body_entered"]
