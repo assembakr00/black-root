@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://qv33wtajxomn" path="res://scenes/gui/narrative_box.tscn" id="3_gmlin"]
 [ext_resource type="Texture2D" uid="uid://b6ygnxa4o6xsb" path="res://assets/player/Ve-run.png" id="4_p47bc"]
 [ext_resource type="Texture2D" uid="uid://cad07wgg76aol" path="res://assets/player/Ve-idle.png" id="5_idle"]
+[ext_resource type="AudioStream" uid="uid://cwby3qt7o1w7" path="res://assets/audio/sfx/menu_click_fancy.mp3" id="7_0owmy"]
+[ext_resource type="AudioStream" uid="uid://dhmlhp1cpj5la" path="res://assets/audio/sfx/fall_thud.mp3" id="8_qek5x"]
+[ext_resource type="AudioStream" uid="uid://cwkrpud4lunqe" path="res://assets/audio/sfx/walk1.mp3" id="9_5gtgg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vfr"]
 size = Vector2(74, 151.99998)
@@ -198,6 +201,17 @@ offset_right = 1061.0
 offset_bottom = 586.0
 theme_override_font_sizes/font_size = 24
 text = "Leave the root"
+
+[node name="ButtonAudioFancy" type="AudioStreamPlayer2D" parent="Choices" unique_id=1643705832]
+stream = ExtResource("7_0owmy")
+
+[node name="FallSound" type="AudioStreamPlayer2D" parent="." unique_id=759004467]
+stream = ExtResource("8_qek5x")
+volume_db = 5.0
+
+[node name="WalkSound" type="AudioStreamPlayer2D" parent="." unique_id=96079301]
+stream = ExtResource("9_5gtgg")
+volume_db = -3.0
 
 [connection signal="area_entered" from="InteractArea" to="." method="_on_interact_area_area_entered"]
 [connection signal="area_exited" from="InteractArea" to="." method="_on_interact_area_area_exited"]

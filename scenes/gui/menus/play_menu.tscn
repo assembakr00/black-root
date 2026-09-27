@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://0rd56bl2unba" path="res://scripts/gui/menus/play_menu.gd" id="1_cub8w"]
 [ext_resource type="Texture2D" uid="uid://bxmtw61c4anjy" path="res://assets/gui/level_1_button.png" id="2_u53q1"]
+[ext_resource type="AudioStream" uid="uid://cost2b83n3tn6" path="res://assets/audio/sfx/menu_click.mp3" id="3_86p3v"]
 
 [node name="Play Menu" type="Control" unique_id=670787540]
 layout_mode = 3
@@ -69,6 +70,9 @@ offset_right = 288.0
 offset_bottom = 140.0
 theme_override_font_sizes/font_size = 32
 text = "Back"
+
+[node name="ButtonAudio" type="AudioStreamPlayer" parent="." unique_id=1721033694]
+stream = ExtResource("3_86p3v")
 
 [connection signal="pressed" from="PlayLevel1" to="." method="_on_play_level_1_pressed"]
 [connection signal="pressed" from="PlayLevel2" to="." method="_on_play_level_2_pressed"]

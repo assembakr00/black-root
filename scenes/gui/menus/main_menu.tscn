@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ddtgjbsvdlkwe"]
 
 [ext_resource type="Script" uid="uid://dby6u4h5o2xky" path="res://scripts/gui/menus/main_menu.gd" id="1_xpnup"]
+[ext_resource type="AudioStream" uid="uid://cost2b83n3tn6" path="res://assets/audio/sfx/menu_click.mp3" id="2_vjjin"]
 
 [node name="Main Menu" type="Control" unique_id=670787540]
 layout_mode = 3
@@ -33,6 +34,9 @@ offset_right = 677.0
 offset_bottom = 505.0
 theme_override_font_sizes/font_size = 32
 text = "Exit"
+
+[node name="ButtonAudio" type="AudioStreamPlayer" parent="." unique_id=1818901433]
+stream = ExtResource("2_vjjin")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

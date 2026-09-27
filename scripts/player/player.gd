@@ -6,6 +6,8 @@ const RUN_SPEED = 1100.0
 const JUMP_VELOCITY = -520.0
 const GRAVITY_SCALE = 1.5
 
+var animation_type = "init"
+
 # Used to smooth the movement slightly
 var target_vel = Vector2(0, 0)
 # How fast the player can accelerate, not actually pixels per second squared
@@ -14,9 +16,9 @@ var player_acceleration = 5
 var stopping_speed = 0.1
 
 func _physics_process(delta: float) -> void:
-	move(delta)
-	move_and_slide()
+	await move(delta)
 	_update_animation()
+	move_and_slide()
 
 func _process(delta: float) -> void:
 	$Choices.visible = globals.can_interact_with_root
@@ -26,7 +28,7 @@ func _update_animation() -> void:
 	
 	turn_player(animated_sprite)
 	
-	var animation_type: String = get_animation_type()
+	animation_type = get_animation_type()
 
 	if animated_sprite.animation != animation_type:
 		animated_sprite.play(animation_type)
@@ -45,10 +47,15 @@ func get_animation_type() -> String:
 
 func move(delta):
 	target_vel = Vector2.ZERO
-
+	
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
 			velocity.y = JUMP_VELOCITY
+		# If the player just landed
+		if animation_type == "fall":
+			$FallSound.play()
+		elif animation_type == "move" and !$WalkSound.playing:
+			$WalkSound.play()
 	else:
 		velocity += get_gravity() * delta * GRAVITY_SCALE
 
@@ -82,7 +89,9 @@ func _on_interact_area_area_exited(area: Area2D) -> void:
 
 func _on_investigate_pressed() -> void:
 	globals.root_status = "investigate"
+	$Choices/ButtonAudioFancy.play()
 
 
 func _on_leave_pressed() -> void:
 	globals.root_status = "leave"
+	$Choices/ButtonAudioFancy.play()

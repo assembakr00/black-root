@@ -1,3 +1,5 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
 TileMapLayer
 TileMap
 RichTextLabel
@@ -10,5 +12,3 @@ Timer
 TextureRect
 Parallax2D
 HSeparator
-Camera2D
-StaticBody2D
