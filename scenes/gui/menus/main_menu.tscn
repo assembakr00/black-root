@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://ddtgjbsvdlkwe"]
 
 [ext_resource type="Script" uid="uid://dby6u4h5o2xky" path="res://scripts/gui/menus/main_menu.gd" id="1_xpnup"]
+[ext_resource type="Texture2D" uid="uid://btxxfug8kdlg3" path="res://assets/gui/buttonleave.png" id="2_6heoc"]
 [ext_resource type="AudioStream" uid="uid://cost2b83n3tn6" path="res://assets/audio/sfx/menu_click.mp3" id="2_vjjin"]
+[ext_resource type="Texture2D" uid="uid://bxmtw61c4anjy" path="res://assets/gui/level_1_button.png" id="3_level1"]
 
 [node name="Main Menu" type="Control" unique_id=670787540]
 layout_mode = 3
@@ -14,30 +16,46 @@ script = ExtResource("1_xpnup")
 
 [node name="Background" type="TextureRect" parent="." unique_id=842709896]
 layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+offset_left = 11.0
+offset_top = -4.0
+offset_right = 1163.0
+offset_bottom = 644.0
 
 [node name="Play" type="Button" parent="." unique_id=829921900]
 layout_mode = 0
-offset_left = 429.0
-offset_top = 165.0
-offset_right = 677.0
-offset_bottom = 265.0
+offset_left = 416.0
+offset_top = 176.0
+offset_right = 676.0
+offset_bottom = 286.0
 theme_override_font_sizes/font_size = 32
-text = "Play"
+icon = ExtResource("3_level1")
+icon_alignment = 1
+expand_icon = true
 
 [node name="Exit" type="Button" parent="." unique_id=746495108]
 layout_mode = 0
-offset_left = 429.0
-offset_top = 405.0
-offset_right = 677.0
-offset_bottom = 505.0
+offset_left = 430.0
+offset_top = 335.0
+offset_right = 684.0
+offset_bottom = 462.0
 theme_override_font_sizes/font_size = 32
-text = "Exit"
+icon = ExtResource("2_6heoc")
+icon_alignment = 1
+expand_icon = true
 
 [node name="ButtonAudio" type="AudioStreamPlayer" parent="." unique_id=1818901433]
 stream = ExtResource("2_vjjin")
 bus = &"sfx"
+
+[node name="lvl1" type="Sprite2D" parent="." unique_id=818885933]
+position = Vector2(530, 236)
+scale = Vector2(4.6562495, 4.1666665)
+texture = ExtResource("3_level1")
+
+[node name="leave" type="Sprite2D" parent="." unique_id=2054460791]
+position = Vector2(538.5, 397.75)
+scale = Vector2(4.5234375, 4.1770835)
+texture = ExtResource("2_6heoc")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

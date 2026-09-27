@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Script" path="res://scripts/objects/choice_trigger.gd" id="1_choice"]
+[ext_resource type="Texture2D" uid="uid://kb46ndghfpxn" path="res://assets/gui/buttoninvestigate.png" id="2_investigate"]
+[ext_resource type="Texture2D" uid="uid://btxxfug8kdlg3" path="res://assets/gui/buttonleave.png" id="3_leave"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_choice"]
 radius = 96.0
@@ -28,6 +30,9 @@ offset_right = 336.0
 offset_bottom = 108.0
 theme_override_font_sizes/font_size = 24
 text = "Investigate"
+icon = ExtResource("2_investigate")
+icon_alignment = 1
+expand_icon = true
 
 [node name="Leave" type="Button" parent="ChoiceUI/Panel"]
 offset_left = 368.0
@@ -36,3 +41,6 @@ offset_right = 680.0
 offset_bottom = 108.0
 theme_override_font_sizes/font_size = 24
 text = "Leave"
+icon = ExtResource("3_leave")
+icon_alignment = 1
+expand_icon = true

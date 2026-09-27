@@ -1,16 +1,4 @@
-res://scenes/areas_in_world/level_1.tscn
-res://scripts/game_state.gd
-res://scripts/objects/choice_trigger.gd
-res://scripts/player/player.gd
-res://scripts/ending.gd
-res://default_bus_layout.tres
 res://scenes/gui/menus/main_menu.tscn
-res://scenes/gui/menus/play_menu.tscn
-res://scenes/gui/narrative_box.tscn
-res://scenes/player/player.tscn
-res://scenes/objects/platform.tscn
-res://scripts/globals.gd
-res://scenes/objects/small Platform.tscn
-res://scenes/objects/Big platform.tscn
-res://scenes/objects/small platform.tscn
-res://scripts/killzone.gd
+res://scenes/areas_in_world/level_1.tscn
+res://scripts/ending.gd
+res://scripts/gui/menus/main_menu.gd
