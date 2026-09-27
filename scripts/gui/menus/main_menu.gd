@@ -18,4 +18,4 @@ func _on_exit_pressed() -> void:
 
 func _on_play_pressed() -> void:
 	$ButtonAudio.play()
-	get_tree().call_deferred("change_scene_to_file", "res://scenes/gui/menus/play_menu.tscn")
+	get_tree().call_deferred("change_scene_to_file", "res://scenes/areas_in_world/level_1.tscn")
