@@ -1,10 +1,1 @@
 res://scenes/areas_in_world/level_1.tscn
-res://scripts/globals.gd
-res://scenes/gui/narrative_box.gd
-res://scenes/gui/narrative_box.tscn
-res://scripts/player/player.gd
-res://scenes/gui/menus/play_menu.tscn
-res://scenes/gui/menus/main_menu.tscn
-res://scenes/player/player.tscn
-res://scripts/gui/menus/main_menu.gd
-res://scripts/gui/menus/play_menu.gd
