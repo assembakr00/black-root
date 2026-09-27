@@ -3,6 +3,7 @@ extends Node
 var can_interact_with_root = false
 
 var root_status = false
+var can_get_root = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -37,5 +38,8 @@ var init_text = {
 	"2time": 3, 
 	"3text": "SKULD: Not this time.", 
 	"3time": 3,
-	"4text": "VÉ: ...That wasn't here last season."
+	"4text": "VÉ: ...That wasn't here last season.",
+	"4time": 3, 
+	"4func": "can_get_root", 
+	"5text": "Objective: Search for the black root"
 }

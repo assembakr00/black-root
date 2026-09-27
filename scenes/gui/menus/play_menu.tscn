@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bm7pcqsw8uwde"]
 
 [ext_resource type="Script" uid="uid://0rd56bl2unba" path="res://scripts/gui/menus/play_menu.gd" id="1_cub8w"]
+[ext_resource type="Texture2D" uid="uid://bxmtw61c4anjy" path="res://assets/gui/level_1_button.png" id="2_u53q1"]
 
 [node name="Play Menu" type="Control" unique_id=670787540]
 layout_mode = 3
@@ -16,16 +17,22 @@ layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 648.0
 
+[node name="Level1Button" type="Sprite2D" parent="." unique_id=1089200155]
+position = Vector2(544, 236.5)
+scale = Vector2(3.3541667, 3.3541667)
+texture = ExtResource("2_u53q1")
+
 [node name="PlayLevel1" type="Button" parent="." unique_id=829921900]
 layout_mode = 0
 offset_left = 429.0
-offset_top = 85.0
+offset_top = 189.0
 offset_right = 677.0
-offset_bottom = 185.0
+offset_bottom = 289.0
 theme_override_font_sizes/font_size = 32
-text = "Play Level 1"
+flat = true
 
 [node name="PlayLevel2" type="Button" parent="." unique_id=50181002]
+visible = false
 layout_mode = 0
 offset_left = 429.0
 offset_top = 213.0
@@ -35,6 +42,7 @@ theme_override_font_sizes/font_size = 32
 text = "Play Level 2"
 
 [node name="PlayLevel3" type="Button" parent="." unique_id=4578422]
+visible = false
 layout_mode = 0
 offset_left = 429.0
 offset_top = 341.0
@@ -44,6 +52,7 @@ theme_override_font_sizes/font_size = 32
 text = "Play Level 3"
 
 [node name="PlayLevel4" type="Button" parent="." unique_id=516281299]
+visible = false
 layout_mode = 0
 offset_left = 429.0
 offset_top = 469.0

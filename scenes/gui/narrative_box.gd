@@ -29,6 +29,7 @@ func _process(delta: float) -> void:
 		if $NarratorTimer.time_left == 0:
 			change_time(curr_text)
 			show_text(curr_text)
+			call_funcs(curr_text)
 
 # Update the text
 func show_text(text_dict):
@@ -49,6 +50,15 @@ func change_time(text_dict, time = null):
 	else:
 		return "No time set"
 
+func call_funcs(text_dict):
+	if str(curr_step) + "func" in text_dict:
+		call(text_dict[str(curr_step) + "func"])
+	else:
+		return "No funcs found"
+
+# Update the player so that they can get the root
+func can_get_root():
+	globals.can_get_root = true
 
 func _on_narrator_timer_timeout() -> void:
 	curr_step += 1

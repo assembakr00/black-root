@@ -69,15 +69,15 @@ func turn_player(animated_sprite):
 
 
 func _on_interact_area_area_entered(area: Area2D) -> void:
-	if area.name == "BlackenedRoot":
+	if area.name == "BlackenedRoot" and globals.can_get_root:
 		globals.can_interact_with_root = true
-		print("Player can interact")
+		#print("Player can interact")
 
 
 func _on_interact_area_area_exited(area: Area2D) -> void:
-	if area.name == "BlackenedRoot":
+	if area.name == "BlackenedRoot" and globals.can_get_root:
 		globals.can_interact_with_root = false
-		print("Player can't interact")
+		#print("Player can't interact")
 
 
 func _on_investigate_pressed() -> void:
