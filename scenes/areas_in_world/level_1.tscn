@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://cxj2ow0xk0grg" path="res://assets/tiles/dirt_tilemap.png" id="2_81law"]
 [ext_resource type="Texture2D" uid="uid://cbvfywuuac0am" path="res://assets/tiles/root.png" id="3_ce23n"]
 [ext_resource type="Texture2D" uid="uid://dpyfai7ox6j1x" path="res://assets/tiles/root+black.png" id="4_ce23n"]
+[ext_resource type="Texture2D" uid="uid://bcah7med42du3" path="res://assets/tiles/root+black_liquid_middle.png" id="4_kfbm6"]
+[ext_resource type="Texture2D" uid="uid://be5ygdk6286d2" path="res://assets/tiles/root_tile.png" id="5_dut07"]
 [ext_resource type="Texture2D" uid="uid://cb3vy1r1r3e88" path="res://assets/tiles/root+black_liquid.png" id="6_wscyj"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ce23n"]
@@ -51,8 +53,24 @@ texture = ExtResource("3_ce23n")
 2:1/0 = 0
 3:1/0 = 0
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dut07"]
+texture = ExtResource("4_kfbm6")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uwq5t"]
+texture = ExtResource("5_dut07")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+
 [sub_resource type="TileSet" id="TileSet_v5vfr"]
 sources/0 = SubResource("TileSetAtlasSource_kfbm6")
+sources/1 = SubResource("TileSetAtlasSource_dut07")
+sources/2 = SubResource("TileSetAtlasSource_uwq5t")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v5vfr"]
 size = Vector2(184, 50)
