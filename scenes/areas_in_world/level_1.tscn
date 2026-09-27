@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://be5ygdk6286d2" path="res://assets/tiles/root_tile.png" id="5_dut07"]
 [ext_resource type="Texture2D" uid="uid://cb3vy1r1r3e88" path="res://assets/tiles/root+black_liquid.png" id="6_wscyj"]
 [ext_resource type="PackedScene" path="res://scenes/objects/choice_trigger.tscn" id="7_choice"]
-[ext_resource type="PackedScene" uid="uid://cgmd38r6ru62p" path="res://scenes/music/audio_stream_player_2d.tscn" id="10_gcm2j"]
 [ext_resource type="PackedScene" uid="uid://cu5ihad0iyhvn" path="res://scenes/objects/killzone.tscn" id="12_3w3sh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3w3sh"]
@@ -411,11 +410,10 @@ texture = ExtResource("6_wscyj")
 position = Vector2(3, -1)
 
 [node name="Player" parent="." unique_id=1346119174 instance=ExtResource("1_weabw")]
-position = Vector2(1, -2)
-
-[node name="AudioStreamPlayer2D" parent="." unique_id=630824341 instance=ExtResource("10_gcm2j")]
+position = Vector2(-222, 6)
 
 [node name="killzone" parent="." unique_id=2088758882 instance=ExtResource("12_3w3sh")]
+position = Vector2(7, -4)
 
 [node name="kill zone colliosion" type="CollisionShape2D" parent="killzone" unique_id=1344783331]
 shape = SubResource("WorldBoundaryShape2D_rglt0")
