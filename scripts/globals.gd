@@ -15,30 +15,27 @@ func _process(delta: float) -> void:
 	
 
 var investigate_text = {
-	"0text": "I should probably look into this some more", 
-	"0time": 4, 
-	"1text": "Don't want it to get any worse", 
+	"0text": "VÉ: That's not old age. That's not weather either.", 
+	"0time": 3,
+	"1text": "VÉ: I need to tell someone. Even if they don't listen.", 
 	"1time": 3
 }
 
 var leave_text = {
-	"0text": "Not my problem", 
-	"0time": 2, 
-	"1text": "Someone else can deal with that", 
+	"0text": "VÉ: It's an old tree. Old things crack. That's not my burden today.", 
+	"0time": 3, 
+	"1text": "VÉ: I told myself it wasn't my burden. I was wrong. By the time I looked again, there was nothing left to check.", 
 	"1time": 3
 }
 
-var level_1_text = {
-	"0text": "Bla", 
-	"0time": 3, 
-	"1text": "BlaBla", 
+var init_text = {
+	"0text": "VÉ: I was small when they planted this tree. I have watched it grow for longer than the gods have kept count.", 
+	"0time": 4, 
+	"1text": "URD: The thread frays, little one.", 
 	"1time": 3, 
-	"2text": "BlaBlaBla", 
+	"2text": "VÉ: It has frayed before. It always mends.", 
 	"2time": 3, 
-	"3text": "BlaBlaBlaBla", 
-	"3time": 3, 
-	"4text": "BlaBlaBlaBlaBla", 
-	"4time": 3, 
-	"5text": "BlaBlaBlaBlaBlaBla", 
-	"5time": 3, 
+	"3text": "SKULD: Not this time.", 
+	"3time": 3,
+	"4text": "VÉ: ...That wasn't here last season."
 }
