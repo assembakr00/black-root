@@ -74,4 +74,3 @@ func turn_player(animated_sprite):
 		animated_sprite.flip_h = true
 	elif velocity.x > 0:
 		animated_sprite.flip_h = false
-

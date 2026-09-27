@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bx3i1ufg820dx"
-path="res://.godot/imported/Props.png-4688e1a4da62e825ad766bbc21018dc2.ctex"
+path="res://.godot/imported/Props.png-786be82099e0937e83ca274518fe8e42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/World Atlas/Social/Props.png"
-dest_files=["res://.godot/imported/Props.png-4688e1a4da62e825ad766bbc21018dc2.ctex"]
+source_file="res://assets/tiles/World Atlas/Social/Props.png"
+dest_files=["res://.godot/imported/Props.png-786be82099e0937e83ca274518fe8e42.ctex"]
 
 [params]
 

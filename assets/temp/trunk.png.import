@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6mbeequonjbl"
-path="res://.godot/imported/02.png-53dfef5e4b28e913b50c14d6df7a3b81.ctex"
+uid="uid://b86uai8at7mi6"
+path="res://.godot/imported/trunk.png-f29aba0fec178e9f36f352578589439d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tiles/World Atlas/Social/02.png"
-dest_files=["res://.godot/imported/02.png-53dfef5e4b28e913b50c14d6df7a3b81.ctex"]
+source_file="res://assets/temp/trunk.png"
+dest_files=["res://.godot/imported/trunk.png-f29aba0fec178e9f36f352578589439d.ctex"]
 
 [params]
 

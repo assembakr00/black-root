@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ds68gryo6u5h4"
-path="res://.godot/imported/Rocks.png-b0b7c8e90e8c2bf5610a62b15db2e1b9.ctex"
+path="res://.godot/imported/Rocks.png-ec9dfcc8d2f48c1f10a36bc968a27df2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/World Atlas/Background/Rocks.png"
-dest_files=["res://.godot/imported/Rocks.png-b0b7c8e90e8c2bf5610a62b15db2e1b9.ctex"]
+source_file="res://assets/tiles/World Atlas/Background/Rocks.png"
+dest_files=["res://.godot/imported/Rocks.png-ec9dfcc8d2f48c1f10a36bc968a27df2.ctex"]
 
 [params]
 

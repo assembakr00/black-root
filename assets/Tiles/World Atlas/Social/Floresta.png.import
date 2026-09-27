@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://xaljymxgnn7y"
-path="res://.godot/imported/Floresta.png-8c04d17670fa9ecc74e5317b3a0ba607.ctex"
+path="res://.godot/imported/Floresta.png-0283074129f38c6be83703002eb9eae3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tiles/World Atlas/Social/Floresta.png"
-dest_files=["res://.godot/imported/Floresta.png-8c04d17670fa9ecc74e5317b3a0ba607.ctex"]
+source_file="res://assets/tiles/World Atlas/Social/Floresta.png"
+dest_files=["res://.godot/imported/Floresta.png-0283074129f38c6be83703002eb9eae3.ctex"]
 
 [params]
 

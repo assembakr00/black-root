@@ -1,5 +1,4 @@
-res://scenes/gui/menus/main_menu.tscn
+res://scenes/objects/killzone.tscn
 res://scenes/areas_in_world/level_1.tscn
-res://scripts/ending.gd
-res://scripts/gui/menus/main_menu.gd
-res://scenes/objects/choice_trigger.tscn
+res://scripts/player/player.gd
+res://scenes/player/player.tscn
